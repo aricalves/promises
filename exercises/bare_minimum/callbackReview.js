@@ -9,7 +9,7 @@ var request = require('request');
 var pluckFirstLineFromFile = function (filePath, cb) {
   fs.readFile(filePath, (err, data) => {
     let firstLine = null;
-    if (data) firstLine = data.toString().split('\n')[0];
+    if (data) { firstLine = data.toString().split('\n')[0]; }
     cb(err, firstLine);
   });
 };
