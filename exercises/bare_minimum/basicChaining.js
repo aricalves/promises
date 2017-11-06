@@ -23,8 +23,8 @@ var fetchProfileAndWriteToFile = function(readFilePath, writeFilePath) {
       gh(user)
     )
     .then(profile => {
-      profile = (JSON.stringify(profile))
-      return fs.writeFileAsync(writeFilePath, profile)
+      profile = (JSON.stringify(profile));
+      return fs.writeFileAsync(writeFilePath, profile);
     });
 };
 
